@@ -1,0 +1,271 @@
+# Node.js + Express Practice Tasks
+
+This repository contains a collection of backend development tasks implemented using **Node.js** and **Express.js**.
+Each task demonstrates different backend concepts such as routing, CRUD APIs, folder structure, services, and error handling.
+
+---
+
+## 📂 Project Structure
+
+```
+task
+│
+├── task_1  → Create your first API
+├── task_2  → Create multiple routes
+├── task_3  → Implement folder structure
+├── task_4  → Build Student CRUD API
+├── task_5  → Follow naming conventions
+├── task_6  → Add new feature
+├── task_7  → Add new entity
+├── task_8  → Error handling
+├── task_9  → Service layer implementation
+│
+└── README.md
+```
+
+---
+
+# 🚀 Tasks Overview
+
+## Task 1 – Create Your First API
+
+* Setup Node.js project
+* Install Express
+* Create a simple API endpoint
+
+Example endpoint:
+
+```
+GET / 
+```
+
+Response:
+
+```
+Hello, this is my first API
+```
+
+---
+
+## Task 2 – Create Multiple Routes
+
+Implemented multiple routes using Express.
+
+Example routes:
+
+```
+GET /about
+GET /contact
+GET /users
+```
+
+This demonstrates **basic Express routing**.
+
+---
+
+## Task 3 – Implement Folder Structure
+
+Organized the project using a clean structure:
+
+```
+controllers
+routes
+server.js
+```
+
+Benefits:
+
+* Better maintainability
+* Cleaner project organization
+* Easier scalability
+
+---
+
+## Task 4 – Build Student CRUD API
+
+Implemented full **CRUD operations**.
+
+Operations included:
+
+| Method | Endpoint      | Description      |
+| ------ | ------------- | ---------------- |
+| GET    | /students     | Get all students |
+| POST   | /students     | Add new student  |
+| PUT    | /students/:id | Update student   |
+| DELETE | /students/:id | Delete student   |
+
+---
+
+## Task 5 – Naming Conventions
+
+Followed proper coding conventions:
+
+* **camelCase** for variables and functions
+* **lowercase folder names**
+* **plural nouns for routes**
+
+Examples:
+
+```
+studentController.js
+studentRoutes.js
+getStudents()
+addStudent()
+```
+
+---
+
+## Task 6 – Add New Feature
+
+Added **search functionality** to the student API.
+
+Example:
+
+```
+GET /students/search?name=rah
+```
+
+This allows searching students by name.
+
+---
+
+## Task 7 – Add New Entity
+
+Added a **Course API**.
+
+Endpoints:
+
+```
+GET /courses
+POST /courses
+```
+
+Example course object:
+
+```
+{
+  "id": 1,
+  "title": "Node.js"
+}
+```
+
+---
+
+## Task 8 – Error Handling
+
+Implemented centralized **error handling middleware**.
+
+Example error response:
+
+```
+{
+  "message": "Student not found"
+}
+```
+
+Benefits:
+
+* Consistent error responses
+* Cleaner controllers
+* Easier debugging
+
+---
+
+## Task 9 – Service Layer Implementation
+
+Introduced **service layer architecture**.
+
+Structure:
+
+```
+controllers
+routes
+services
+middleware
+```
+
+Flow:
+
+```
+Client Request
+      ↓
+Routes
+      ↓
+Controller
+      ↓
+Service Layer
+      ↓
+Data
+      ↓
+Response
+```
+
+Benefits:
+
+* Separation of concerns
+* Better scalability
+* Easier testing
+
+---
+
+# 🛠 Technologies Used
+
+* Node.js
+* Express.js
+* JavaScript
+* REST API
+
+---
+
+# ▶️ How to Run the Project
+
+1. Clone the repository
+
+```
+git clone https://github.com/yourusername/nodejs-learning-tasks.git
+```
+
+2. Navigate to any task folder
+
+```
+cd task_9
+```
+
+3. Install dependencies
+
+```
+npm install
+```
+
+4. Run the server
+
+```
+node server.js
+```
+
+Server will start on:
+
+```
+http://localhost:3000
+```
+
+---
+
+# 📚 Learning Outcomes
+
+Through these tasks I practiced:
+
+* REST API development
+* Express routing
+* CRUD operations
+* Project folder structure
+* Service layer architecture
+* Error handling
+* Backend best practices
+
+---
+
+# 👨‍💻 Author
+
+Dhakshath UK
+Backend Developer | Node.js | Full Stack Developer
